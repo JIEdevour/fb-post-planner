@@ -1,54 +1,30 @@
-<html>
-<head>
-    <title>Facebook Post Planner</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
-</head>
+<div class="container" style='top: 70px; position: relative;'>
+    <div class='row well blue'>
 
-<body>
-
-    <script src="/static/js/vendors/jquery.js"></script>
-    <script src="/static/js/vendors/bootstrap.min.js"></script>
-    <script src="/static/js/app.js"></script>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Facebook Post Planner</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/post">Scheduled Post</a></li>        
-          </ul>
-        <div id="fb-login" type="button" class="btn btn-success navbar-btn navbar-right"><i class="fa fa-facebook"></i> | Login</div>
-        <div id="fb-logout" type="button" class="btn btn-success navbar-btn navbar-right" style="display:none"><i class="fa fa-facebook"></i> | Logout</div>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-
-    <div class="container" style='top: 70px; position: relative;'>
-      <div class='row'>
-        <form role="form" id="post-form">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Status: </label>
-              <textarea class="form-control" rows="4" columns="15" id="message" required placeholder="What's on your mind?"></textarea>
+        <form role="form" id="post-form" action="/" method="post" class="col-md-8">
+          <div  class="form-group">
+            <label style="margin-left:480px"for="exampleInputEmail1"><strong>Update Status: </strong></label>
+            <div class="fbpost" style="margin-left:345px">
+            	<textarea name="message" class="form-control" id="message" required placeholder="What's on your mind?"></textarea>
+            </div>
+            <input type="hidden" name="access_token" value="">
+            <input type="hidden" name="fbID" value="">
+            <div class="form-group" style="margin-left:420px">
+                <div class='input-group date' id='datetimepicker'>
+                    <input type='text' class="form-control" name="date_to_post" placeholder="Date to post"/>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar" required></span>
+                    </span>
+                </div>
+            </div>
           </div>
-            <button type="submit" class="btn btn-success btn-facebook">Post</button>
+          <div style="margin-left:450px" class="button">
+	          <button id="button" type="submit" class="btn btn-info btn-facebook">Schedule</button>
+	          <div id="post-now" type="submit" class="btn btn-info btn-facebook">Post</div>
+          </div>
         </form>
-
-      <div class="fb-like" data-href="https://developers.facebook.com/apps/636910099763251/dashboard/" data-layout="standard" data-action="like" data-show-faces="false" data-share="false">
-      </div>
-
-      </div>
+        <div style="margin-left:400px" class="fb-like" data-href="https://developers.facebook.com/apps/636910099763251/dashboard/" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
     </div>
 
+</div>
 </body>
-
 </html>

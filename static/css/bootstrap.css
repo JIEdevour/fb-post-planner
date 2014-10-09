@@ -13,14 +13,13 @@ html {
 }
 body {
   margin: 0;
-  background-image: url(http://1-background.com/images/silk/green-silk-background-seamless.jpg);
+  background-image: url(../image/background.jpg);
   background-position:fixed;
 
 }
 #button
 {
-color:#000000;
-font-weight:bold; 
+color:#FFFFFF;
 }
 article,
 aside,
@@ -4238,7 +4237,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
+  background-color: #000;
   border-color: #080808;
 }
 .navbar-inverse .navbar-brand {
@@ -5049,6 +5048,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-body {
   padding: 15px;
+  color:#000000;
 }
 .panel-heading {
   padding: 10px 15px;
@@ -5063,10 +5063,10 @@ a.list-group-item-danger.active:focus {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
-  color: inherit;
+  color: #FF6600;
 }
 .panel-title > a {
-  color: inherit;
+  color: #FFFF99;
 }
 .panel-footer {
   padding: 10px 15px;
@@ -5294,19 +5294,19 @@ a.list-group-item-danger.active:focus {
   border-bottom-color: #d6e9c6;
 }
 .panel-info {
-  border-color: #4E9258;
+  border-color: #bce8f1;
 }
 .panel-info > .panel-heading {
-  color: #4E9258;
-  background-color: #6AFB92;
-  border-color: #FFFCFE;
+  color: #FFFFCC;
+  background-color: #FFFFCC;
+  border-color: #FFFF99;
 }
 .panel-info > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #bce8f1;
 }
 .panel-info > .panel-heading .badge {
-  color: #d9edf7;
-  background-color: #4E9258;
+  color: #FFFF99;
+  background-color: #FF6600;
 }
 .panel-info > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #bce8f1;
@@ -6247,27 +6247,29 @@ button.close {
 /*# sourceMappingURL=bootstrap.css.map */
 
 #datetimepicker{
-  width: 30%
+  width: 70%
 }
 .mybtn{
-  padding: 5px 5px 5px 5px;
-  position: relative;
-  float: right;
+	padding: 5px 5px 5px 5px;
+	position: relative;
+	float: right;
 }
 .button{
-  padding-left:20px;
+	padding-left:20px;
+  width: 50%;
 }
 .fbpost{
-  padding: 20px 20px 20px 20px;
+	padding: 20px 20px 20px 20px;
 }
 .input-group{
-  padding-left:20px;
-  padding-bottom:20px;}
+	padding-left:20px;
+	padding-bottom:20px;}
 
 .blue{
-  background-color:#C3FDB8;
-  opacity:.9;
-  border:3px solid #98FF98;
+	background-color: #FFCC66;
+  padding-right: 10px;
+  border: 0px;
+  opacity: 0.8;
 }
 .panel-default > .panel-heading .badge {
 color: #f5f5f5;
